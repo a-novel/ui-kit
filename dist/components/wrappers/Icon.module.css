@@ -1,0 +1,25 @@
+.wrapper {
+  --scale: 1em;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.wrapper svg {
+  display: block;
+  margin: auto;
+}
+
+.wrapper.vertical svg {
+  height: var(--scale);
+  width: auto;
+}
+
+.wrapper.horizontal svg {
+  height: auto;
+  width: var(--scale);
+}
+
+.wrapper.square svg {
+  height: var(--scale);
+  width: var(--scale);
+}

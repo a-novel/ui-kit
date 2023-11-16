@@ -1,0 +1,32 @@
+{
+  "exclude": [".*\\.test\\.tsx?$", ".*\\.stories\\.tsx?$", "src/storybook_utils"],
+  "jsc": {
+    "baseUrl": ".",
+    "transform": {
+      "react": {
+        "runtime": "automatic",
+        "importSource": "react"
+      }
+    },
+    "parser": {
+      "syntax": "typescript",
+      "tsx": true
+    },
+    "target": "es2022",
+    "loose": false,
+    "minify": {
+      "compress": false,
+      "mangle": false
+    }
+  },
+  "module": {
+    "type": "es6",
+    "strict": false,
+    "strictMode": true,
+    "lazy": true,
+    "noInterop": false
+  },
+  "minify": true,
+  "sourceMaps": true,
+  "isModule": true
+}

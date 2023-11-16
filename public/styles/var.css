@@ -1,0 +1,94 @@
+:root {
+  /* Colors */
+  --blue: #32adff;
+  --blue-secondary: #298bcc;
+  --blue-tertiary: #195780;
+  --blue-dark: #0d2b40;
+  --green: #14ff00;
+  --green-secondary: #11cc00;
+  --green-tertiary: #0b8000;
+  --green-dark: #054000;
+  --orange: #ff9300;
+  --orange-secondary: #cc7700;
+  --orange-tertiary: #804a00;
+  --orange-dark: #402500;
+  --red: #ff3232;
+  --red-secondary: #cc2929;
+  --red-tertiary: #801919;
+  --red-dark: #400d0d;
+  --purple: #d800ff;
+  --purple-secondary: #ad00cc;
+  --purple-tertiary: #6c0080;
+  --purple-dark: #360040;
+  --gold: #ffd600;
+  --gold-secondary: #ccaa00;
+  --gold-tertiary: #806a00;
+  --gold-dark: #403500;
+
+  /* Greys */
+  --grey-900: #212121;
+  --grey-850: #353535;
+  --grey-800: #424242;
+  --grey-700: #616161;
+  --grey-600: #757575;
+  --grey-500: #9e9e9e;
+  --grey-400: #bdbdbd;
+  --grey-300: #e0e0e0;
+  --grey-200: #eeeeee;
+  --grey-100: #f5f5f5;
+
+  /* Text */
+  --color-text: #ffffff;
+  --color-text-secondary: var(--grey-300);
+  --color-text-tertiary: var(--grey-500);
+  --color-text-dark: var(--grey-700);
+
+  /* Filling */
+  --color-background: #000000;
+  --color-backdrop-background: rgba(0, 0, 0, 0.4);
+  --color-modal-background: var(--color-background);
+
+  --color-hover-background: rgba(117, 117, 117, 0.5);
+  --color-hover-background-blue: rgba(25, 87, 128, 0.5);
+  --color-hover-background-green: rgba(11, 128, 0, 0.5);
+  --color-hover-background-orange: rgba(128, 74, 0, 0.5);
+  --color-hover-background-red: rgba(128, 25, 25, 0.5);
+  --color-hover-background-purple: rgba(108, 0, 128, 0.5);
+  --color-hover-background-gold: rgba(128, 106, 0, 0.5);
+
+  /* Icons */
+  --color-status-icon: var(--grey-700);
+  --color-button-icon: var(--grey-700);
+  --color-button-icon-hover: var(--grey-500);
+
+  /* Borders */
+  --color-border-box: var(--grey-500);
+  --color-border-box-discrete: var(--grey-800);
+  --color-separator: var(--grey-800);
+  --color-disabled: var(--grey-900);
+
+  /* Dimensions */
+  --radius-small: 0.2rem;
+  --radius: 0.4rem;
+
+  /* Misc */
+  --backdrop-filter: blur(0.6rem) saturate(0.8);
+}
+
+body {
+  font-family: "Nimbus Sans";
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-stroke: thin currentColor;
+  -webkit-text-size-adjust: none;
+
+  /* https://baymard.com/blog/line-length-readability */
+  line-height: 1.5em;
+  /*word-spacing: 0.16em;*/
+  /*letter-spacing: 0.12em;*/
+
+  text-rendering: geometricPrecision;
+}

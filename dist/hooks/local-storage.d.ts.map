@@ -1,0 +1,1 @@
+{"version":3,"file":"local-storage.d.ts","sourceRoot":"","sources":["../../src/hooks/local-storage.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,cAAc,EAAoC,MAAM,OAAO,CAAC;AAEnF,MAAM,WAAW,mBAAmB;IAClC;;;OAGG;IACH,aAAa,CAAC,EAAE,OAAO,CAAC;IACxB;;;;OAIG;IACH,0BAA0B,CAAC,EAAE,OAAO,CAAC;CACtC;AAED;;GAEG;AACH,eAAO,MAAM,oBAAoB,uBACd,MAAM,yCAEd,mBAAmB,8CA4C7B,CAAC"}

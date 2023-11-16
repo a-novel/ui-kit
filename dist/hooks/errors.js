@@ -1,0 +1,2 @@
+import{useEffect}from"react";import{captureException,joinErrors}from"@lib";export const useCaptureException=(description,error,condition=true)=>{useEffect(()=>{if(!condition)return;if(error!=null)captureException(joinErrors(description,error))},[description,error,condition])};export const useCaptureMessage=(description,condition=true)=>{useEffect(()=>{if(!condition)return;if(description!=null)captureException(description)},[description,condition])};
+//# sourceMappingURL=errors.js.map

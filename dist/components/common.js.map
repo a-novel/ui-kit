@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../src/components/common.ts"],"sourcesContent":["export type Color = \"blue\" | \"purple\" | \"red\" | \"green\" | \"orange\" | \"gold\";\n\nexport type ColorIntensity = \"primary\" | \"secondary\" | \"tertiary\" | \"dark\";\n"],"names":[],"mappings":"AAEA,QAA2E"}

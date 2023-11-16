@@ -1,0 +1,3 @@
+{
+  "extends": ["prettier", "plugin:storybook/recommended"]
+}

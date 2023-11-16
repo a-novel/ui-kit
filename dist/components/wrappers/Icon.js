@@ -1,0 +1,2 @@
+import{jsx as _jsx}from"react/jsx-runtime";import css from"./Icon.module.css";import{forwardRef}from"react";export const Icon=forwardRef(function IconWrapper({className,style,scale,scalingMethod,...props},externalRef){return _jsx("span",{ref:externalRef,"data-icon":true,style:{"--scale":scale&&(typeof scale==="number"?`${scale}em`:scale),...style},className:`${css.wrapper} ${css[scalingMethod??"vertical"]} ${className??""}`,...props})});Icon.defaultProps={scale:1,scalingMethod:"vertical"};
+//# sourceMappingURL=Icon.js.map

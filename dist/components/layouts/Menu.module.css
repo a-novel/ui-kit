@@ -1,0 +1,48 @@
+.wrapper {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.wrapper.horizontal {
+  flex-direction: column;
+}
+
+.wrapper.vertical {
+  flex-direction: row;
+}
+
+.sticky {
+  position: sticky;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper.horizontal .sticky {
+  right: 0;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0 0 1rem 0;
+}
+
+.wrapper.vertical .sticky {
+  bottom: 0;
+  flex-direction: column;
+  margin: 0 1rem 0 0;
+}
+
+.sticky:before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+
+  background-color: var(--color-backdrop-background);
+  backdrop-filter: var(--backdrop-filter);
+}

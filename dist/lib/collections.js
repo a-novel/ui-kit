@@ -1,0 +1,2 @@
+const isFillFN=fill=>typeof fill==="function";export const newArray=(length,fill)=>{const array=new Array(length);for(let i=0;i<length;i++)array[i]=isFillFN(fill)?fill(i,array):fill;return array};export const setToArray=set=>{const array=[];set.forEach(value=>array.push(value));return array};
+//# sourceMappingURL=collections.js.map

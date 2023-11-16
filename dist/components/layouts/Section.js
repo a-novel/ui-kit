@@ -1,0 +1,2 @@
+import{jsx as _jsx}from"react/jsx-runtime";import css from"./Section.module.css";import{forwardRef}from"react";import{useSticky}from"@contexts";export const Section=forwardRef(function Section({className,raw,fullScreen,style,...props},externalRef){const{offset}=useSticky();return _jsx("section",{ref:externalRef,className:`${css.section} ${fullScreen?css.fullscreen:""} ${raw?"":css.vertical} ${className??""}`,style:{minHeight:fullScreen?`calc(100vh - ${offset}px)`:undefined,...style},...props})});
+//# sourceMappingURL=Section.js.map

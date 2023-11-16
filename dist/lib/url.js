@@ -1,0 +1,2 @@
+export const isPathnameActive=(pathName,expect,options)=>{const pathBits=pathName.split("/").filter(x=>x!=="");const expectBits=expect.split("/").filter(x=>x!=="");if(options?.exact&&pathBits.length!==expectBits.length)return false;for(const expectedBit of expectBits){const pathBit=pathBits.shift();if(expectedBit==="*")continue;if(expectedBit!==pathBit)return false}if(options?.excludeSubPaths){for(const subPath of options.excludeSubPaths){if(isPathnameActive(pathName,subPath))return false}}return true};
+//# sourceMappingURL=url.js.map

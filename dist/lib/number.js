@@ -1,0 +1,2 @@
+export const METRIC_UNITS=[[1e9,"b"],[1e6,"m"],[1e3,"k"]];export const shortenNumber=(n,units=METRIC_UNITS)=>{const absN=Math.abs(n);const sign=n<0?"-":"";const target=units.find(x=>x[0]<=absN);if(!target){return n.toString()}const[unit,suffix]=target;return`${sign}${Math.floor(absN/Number(unit))}${suffix}`};
+//# sourceMappingURL=number.js.map

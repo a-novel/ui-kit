@@ -1,0 +1,2 @@
+import{jsx as _jsx}from"react/jsx-runtime";import{forwardRef}from"react";import{JSX}from"react/jsx-runtime";import{Container}from"@components/wrappers";export const Page=forwardRef(function Page({main,...props},externalRef){return _jsx(Container,{orientation:"vertical",tag:main?"main":"div",grow:true,width:"full",ref:externalRef,...props})});
+//# sourceMappingURL=Page.js.map

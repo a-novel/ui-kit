@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "emitDeclarationOnly": true
+  },
+  "exclude": [
+    "node_modules",
+    "jest.*",
+    "src/**/*.test.tsx",
+    "src/**/*.stories.tsx",
+    "src/**/*.test.ts",
+    "src/**/*.stories.ts",
+    "src/storybook_utils"
+  ]
+}

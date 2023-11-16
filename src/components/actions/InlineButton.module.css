@@ -1,0 +1,83 @@
+.button {
+  padding: 0.2rem 0.6rem;
+  outline: none;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: var(--radius-small);
+  border-width: thin;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.button:disabled {
+  pointer-events: none;
+  opacity: 0.5;
+  color: var(--color-text);
+  background-color: var(--color-hover-background);
+}
+
+.button.default {
+  color: var(--color-text);
+  border-color: var(--color-text);
+}
+
+.button.default:hover {
+  background-color: var(--color-hover-background);
+}
+
+.button.blue {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.button.blue:hover {
+  background-color: var(--color-hover-background-blue);
+}
+
+.button.green {
+  color: var(--green);
+  border-color: var(--green);
+}
+
+.button.green:hover {
+  background-color: var(--color-hover-background-green);
+}
+
+.button.orange {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+.button.orange:hover {
+  background-color: var(--color-hover-background-orange);
+}
+
+.button.red {
+  color: var(--red);
+  border-color: var(--red);
+}
+
+.button.red:hover {
+  background-color: var(--color-hover-background-red);
+}
+
+.button.purple {
+  color: var(--purple);
+  border-color: var(--purple);
+}
+
+.button.purple:hover {
+  background-color: var(--color-hover-background-purple);
+}
+
+.button.gold {
+  color: var(--gold);
+  border-color: var(--gold);
+}
+
+.button.gold:hover {
+  background-color: var(--color-hover-background-gold);
+}

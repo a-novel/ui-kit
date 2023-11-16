@@ -1,0 +1,22 @@
+.drop-down {
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+.drop-down-menu {
+  --menu-offset: 1.2rem;
+  position: absolute;
+  transition: linear 0.3s;
+  cursor: default;
+}
+
+.drop-down.closed .drop-down-menu {
+  opacity: 0;
+  transform: scaleY(0);
+}
+
+.drop-down.opened .drop-down-menu {
+  opacity: 1;
+  transform: scaleY(1);
+}

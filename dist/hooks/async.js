@@ -1,0 +1,2 @@
+import{useEffect,useState}from"react";export const useAsyncState=resolve=>{const[loading,setLoading]=useState(true);const[error,setError]=useState();const[value,setValue]=useState();useEffect(()=>{setLoading(true);resolve.then(value=>{setError(undefined);setValue(value);setLoading(false)}).catch(setError)},[resolve]);return[value,{loading,error}]};
+//# sourceMappingURL=async.js.map

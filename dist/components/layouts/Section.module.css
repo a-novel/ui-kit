@@ -1,0 +1,15 @@
+.section {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section.vertical.fullscreen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section.vertical {
+  display: flex;
+  flex-direction: column;
+}

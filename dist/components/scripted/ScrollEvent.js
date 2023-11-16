@@ -1,0 +1,2 @@
+import{jsx as _jsx}from"react/jsx-runtime";import{useEffect,useState}from"react";export const ScrollEvent=({callback,threshold,enabled})=>{const[listenerRef,setListenerRef]=useState(null);useEffect(()=>{if(listenerRef==null||enabled===false)return;const observer=new IntersectionObserver(callback);observer.observe(listenerRef);return()=>observer.disconnect()},[callback,enabled,listenerRef]);return _jsx("span",{ref:setListenerRef,style:{position:"absolute",width:1,height:threshold??0,zIndex:-1,bottom:0}})};
+//# sourceMappingURL=ScrollEvent.js.map

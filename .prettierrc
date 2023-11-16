@@ -1,0 +1,18 @@
+{
+  "printWidth": 120,
+  "tabWidth": 2,
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": [
+    "^(server-only|client-only)$",
+    "^(.*).css$",
+    "^(.*).(yml|yaml)$",
+    "^(.*).(json|png|svg|jpg|jpeg)$",
+    "^react(/(.*))?$",
+    "^next(/(.*))?$",
+    "<THIRD_PARTY_MODULES>",
+    "^@/(.*)$",
+    "^[./]$"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

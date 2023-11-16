@@ -1,0 +1,45 @@
+.wrapper {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  font-size: 0.8rem;
+  color: var(--color-text);
+  background-color: var(--grey-800);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform-origin: center;
+  transform: translateY(-50%) translateX(-33%);
+  opacity: 0.8;
+}
+
+.wrapper[data-bg="blue"] .icon {
+  color: var(--blue);
+}
+
+.wrapper[data-bg="green"] .icon {
+  color: var(--green);
+}
+
+.wrapper[data-bg="orange"] .icon {
+  color: var(--orange);
+}
+
+.wrapper[data-bg="red"] .icon {
+  color: var(--red);
+}
+
+.wrapper[data-bg="purple"] .icon {
+  color: var(--purple);
+}
+
+.wrapper[data-bg="gold"] .icon {
+  color: var(--gold);
+}
+
+.wrapper .icon {
+  color: var(--grey-300);
+}

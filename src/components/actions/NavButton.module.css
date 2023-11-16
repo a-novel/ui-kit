@@ -1,0 +1,165 @@
+.button {
+  padding: 0.4rem 0.8rem;
+  border-radius: var(--radius-small);
+  cursor: pointer;
+  outline: none;
+  transition: linear 0.1s;
+  background: none;
+  font-size: 1rem;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  font-family: inherit;
+  width: fit-content;
+  margin: auto 0;
+  border: none;
+}
+
+.main > [data-icon] {
+  padding: 0.4rem 0;
+}
+
+.button .main {
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button .sub {
+  font-size: 0.8rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.button.disabled {
+  pointer-events: none;
+  color: var(--color-text-dark);
+}
+
+.button.left,
+.button.left > * {
+  text-align: left;
+}
+
+.button.right,
+.button.right > * {
+  text-align: right;
+}
+
+.button.center,
+.button.center > * {
+  text-align: center;
+}
+
+[data-orientation="horizontal"] > .button {
+  margin: auto 0;
+}
+
+[data-orientation="vertical"] > .button {
+  width: 100%;
+}
+
+.button:hover {
+  transition: linear 0s;
+}
+
+.button:not(.disabled).default {
+  background-color: transparent;
+}
+.button:not(.disabled).default .main {
+  color: var(--color-text);
+}
+.button:not(.disabled).default .sub {
+  color: var(--color-text-secondary);
+}
+.button:not(.disabled).default:hover {
+  background-color: var(--color-hover-background);
+}
+.button:not(.disabled).default.active {
+  background-color: var(--blue-dark);
+}
+.button:not(.disabled).default.active .main {
+  color: var(--blue);
+}
+.button:not(.disabled).default.active .sub {
+  color: var(--blue-secondary);
+}
+
+.button:not(.disabled).blue .main {
+  color: var(--blue);
+}
+.button:not(.disabled).blue .sub {
+  color: var(--blue-secondary);
+}
+.button:not(.disabled).blue:hover {
+  background-color: var(--blue-dark);
+}
+.button:not(.disabled).blue.active {
+  background-color: var(--blue-dark);
+}
+
+.button:not(.disabled).green .main {
+  color: var(--green);
+}
+.button:not(.disabled).green .sub {
+  color: var(--green-secondary);
+}
+.button:not(.disabled).green:hover {
+  background-color: var(--green-dark);
+}
+.button:not(.disabled).green.active {
+  background-color: var(--green-dark);
+}
+
+.button:not(.disabled).red .main {
+  color: var(--red);
+}
+.button:not(.disabled).red .sub {
+  color: var(--red-secondary);
+}
+.button:not(.disabled).red:hover {
+  background-color: var(--red-dark);
+}
+.button:not(.disabled).red.active {
+  background-color: var(--red-dark);
+}
+
+.button:not(.disabled).gold .main {
+  color: var(--gold);
+}
+.button:not(.disabled).gold .sub {
+  color: var(--gold-secondary);
+}
+.button:not(.disabled).gold:hover {
+  background-color: var(--gold-dark);
+}
+.button:not(.disabled).gold.active {
+  background-color: var(--gold-dark);
+}
+
+.button:not(.disabled).purple .main {
+  color: var(--purple);
+}
+.button:not(.disabled).purple .sub {
+  color: var(--purple-secondary);
+}
+.button:not(.disabled).purple:hover {
+  background-color: var(--purple-dark);
+}
+.button:not(.disabled).purple.active {
+  background-color: var(--purple-dark);
+}
+
+.button:not(.disabled).orange .main {
+  color: var(--orange);
+}
+.button:not(.disabled).orange .sub {
+  color: var(--orange-secondary);
+}
+.button:not(.disabled).orange:hover {
+  background-color: var(--orange-dark);
+}
+.button:not(.disabled).orange.active {
+  background-color: var(--orange-dark);
+}

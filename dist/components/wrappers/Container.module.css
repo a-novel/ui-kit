@@ -1,0 +1,68 @@
+[data-orientation="horizontal"] > .v-top {
+  align-self: start;
+}
+
+[data-orientation="horizontal"] > .v-center {
+  align-self: center;
+}
+
+[data-orientation="horizontal"] > .v-bottom {
+  align-self: end;
+}
+
+[data-orientation="vertical"] > .h-left {
+  align-self: start;
+}
+
+[data-orientation="vertical"] > .h-center {
+  align-self: center;
+}
+
+[data-orientation="vertical"] > .h-right {
+  align-self: end;
+}
+
+*:not([data-orientation="horizontal"]) > .v-top {
+  margin-bottom: auto;
+}
+
+*:not([data-orientation="horizontal"]) > .v-center {
+  margin-bottom: auto;
+  margin-top: auto;
+}
+
+*:not([data-orientation="horizontal"]) > .v-bottom {
+  margin-top: auto;
+}
+
+*:not([data-orientation="vertical"]) > .h-left {
+  margin-right: auto;
+}
+
+*:not([data-orientation="vertical"]) > .h-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+*:not([data-orientation="vertical"]) > .h-right {
+  margin-left: auto;
+}
+
+.blurry {
+  position: relative;
+}
+
+.blurry:before {
+  content: "";
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: inherit;
+
+  background-color: var(--color-backdrop-background);
+  backdrop-filter: var(--backdrop-filter);
+}
